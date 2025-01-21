@@ -12,7 +12,7 @@
   --color-text: #999;
   --color-text-dimmed: #666;
   --color-text-bright: #fff;
-  --color-background: black;
+  --color-background: white;
 
   --font-primary: "Roboto Condensed";
   --font-secondary: "Roboto";

@@ -13,15 +13,27 @@
   --font-size-xlarge: 3.75rem;
   --gap-body-top: 60px;
   --gap-body-right: 60px;
-  --gap-body-bottom: 60px;
+  --gap-body-bottom: 80px;
   --gap-body-left: 60px;
-  --gap-modules: 30px;
+  --gap-modules: 45px;
 }
 
 html {
   cursor: none;
   overflow: hidden;
-  background: var(--color-background);
+  background-color: var(--color-background);
+  /*
+  background-image: url("mediterranean-sea-sunset_bGlqZWyUmZqaraWkpJRmbmdlrWZlbWU-450788201.jpg");
+  */
+  /*
+  background-image: url("V1.6.png");
+  */
+  background-image: url("V1.Miguel.3.png");
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   user-select: none;
   font-size: var(--font-size);
 }
@@ -31,17 +43,26 @@ html {
 }
 
 body {
-  margin: var(--gap-body-top) var(--gap-body-right) var(--gap-body-bottom) var(--gap-body-left);
-  position: absolute;
-  height: calc(100% - var(--gap-body-top) - var(--gap-body-bottom));
-  width: calc(100% - var(--gap-body-right) - var(--gap-body-left));
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family: var(--font-primary), sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    margin: var(--gap-body-top) var(--gap-body-right) var(--gap-body-bottom) var(--gap-body-left);
+    position: absolute;
+    height: calc(100% - var(--gap-body-top) - var(--gap-body-bottom));
+    width: calc(100% - var(--gap-body-right) - var(--gap-body-left));
+    color: var(--color-text);
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
+
+/**
+ * Modules configs.
+ */
+
+.MMM-Videoplayer video {
+    width: 960px !important;  /* Scale to fill the container */
+    height: 540px !important;  /* Maintain aspect ratio */
+}
+
 
 /**
  * Default styles.
